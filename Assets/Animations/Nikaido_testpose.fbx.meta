@@ -1,0 +1,1028 @@
+fileFormatVersion: 2
+guid: 2e727ceb726cab846b6af3633c9f0f8e
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  - first:
+      74: 9185161093348180481
+    second: fuck
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Nikaido_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nikaido_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Nikaido(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Gun
+      parentName: Nikaido(Clone)
+      position: {x: 0.6763342, y: 1.2811697, z: 0.1692975}
+      rotation: {x: 0.455371, y: 0.47458127, z: 0.4546484, w: 0.60058695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dummy001
+      parentName: Gun
+      position: {x: -0.0005447578, y: 0.01150177, z: 0.0021274185}
+      rotation: {x: -0.82645607, y: -0.17428802, z: -0.068240516, w: 0.5309778}
+      scale: {x: 0.23, y: 0.23, z: 0.23}
+    - name: Handle
+      parentName: Dummy001
+      position: {x: -0, y: -0.26473692, z: 0.16074692}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933118, y: 0.17933118, z: 0.17933118}
+    - name: Handle 1
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spusk01
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Handle_bolt001
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 1, y: -0, z: 0, w: -6.123234e-17}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Handle_bolt
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plastic_bolt
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Plastic_bolt001
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 1, y: -0, z: 0, w: -6.123234e-17}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Plastic
+      parentName: Handle
+      position: {x: -0, y: -2.193121, z: 1.0203594}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ring
+      parentName: Handle
+      position: {x: -0.0000001798298, y: 1.920904, z: -2.381936}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Stvol
+      parentName: Dummy001
+      position: {x: 0.00015235812, y: -0.6976889, z: 0.345257}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933118, y: 0.17933118, z: 0.17933118}
+    - name: Stvol 1
+      parentName: Stvol
+      position: {x: -0.0008495908, y: 0.22113691, z: -0.008519191}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Side001
+      parentName: Stvol 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Side_bolt001
+      parentName: Stvol 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Side_bolt
+      parentName: Stvol
+      position: {x: -0.0008495908, y: 0.22113691, z: -0.008519191}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Side
+      parentName: Stvol
+      position: {x: -0.0008495908, y: 0.22113691, z: -0.008519191}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Baraban
+      parentName: Stvol
+      position: {x: -0.0008495908, y: 0.22113688, z: 0.6320427}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kurok
+      parentName: Dummy001
+      position: {x: -0.000000018100373, y: -0.24394378, z: 0.37524462}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933118, y: 0.17933118, z: 0.17933118}
+    - name: Spusk02
+      parentName: Dummy001
+      position: {x: -0.0000000082940526, y: -0.46828628, z: 0.27462104}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933118, y: 0.17933118, z: 0.17933118}
+    - name: spusk_bolt
+      parentName: Dummy001
+      position: {x: -0, y: -0.6580321, z: 0.34372923}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933118, y: 0.17933118, z: 0.17933118}
+    - name: Lock
+      parentName: Dummy001
+      position: {x: 0.0000000017275943, y: -0.32627258, z: 0.54897934}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933118, y: 0.17933118, z: 0.17933118}
+    - name: Lock 1
+      parentName: Lock
+      position: {x: -0.000000009633542, y: -1.8499824, z: -1.1445309}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lock_bolt
+      parentName: Lock
+      position: {x: -0.000000009633542, y: -1.8499824, z: -1.1445309}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lock_bolt001
+      parentName: Lock
+      position: {x: -0.000000009633542, y: -1.8499824, z: -1.1445309}
+      rotation: {x: 1, y: -0, z: 0, w: -6.123234e-17}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Nikaido_Reference
+      parentName: Nikaido(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_Hips
+      parentName: Nikaido_Reference
+      position: {x: 0.0000000047683715, y: 1.1999999, z: 0.0000000035762786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_Spine
+      parentName: Nikaido_Hips
+      position: {x: -0, y: 0.08399994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_Spine1
+      parentName: Nikaido_Spine
+      position: {x: -0, y: 0.15200011, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_Spine2
+      parentName: Nikaido_Spine1
+      position: {x: -0, y: 0.15199997, z: 5.293956e-25}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftShoulder
+      parentName: Nikaido_Spine2
+      position: {x: -0.08399999, y: 0.12847717, z: -5.293956e-25}
+      rotation: {x: -0, y: 0.20020293, z: 0.014351847, w: 0.97964936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftArm
+      parentName: Nikaido_LeftShoulder
+      position: {x: -0.07284207, y: 0.004544067, z: -0.06338739}
+      rotation: {x: 0.12104419, y: -0.20154226, z: -0.29821658, w: 0.92509234}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftForeArm
+      parentName: Nikaido_LeftArm
+      position: {x: -0.25157925, y: -0.19135551, z: 0.027189936}
+      rotation: {x: 0.1256858, y: -0.17799686, z: 0.0030155333, w: 0.97596675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHand
+      parentName: Nikaido_LeftForeArm
+      position: {x: -0.21549879, y: -0.14935575, z: 0.16384935}
+      rotation: {x: 0, y: 0, z: 0.00028874457, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandThumb1
+      parentName: Nikaido_LeftHand
+      position: {x: -0.0058729113, y: -0.050641518, z: 0.050860364}
+      rotation: {x: -0.24661435, y: -0.28062305, z: -0.07749804, w: 0.9243517}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandThumb2
+      parentName: Nikaido_LeftHandThumb1
+      position: {x: 0.016419034, y: -0.02088365, z: 0.023685822}
+      rotation: {x: -0.22515264, y: 0.08862456, z: 0.2353015, w: 0.941321}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandThumb3
+      parentName: Nikaido_LeftHandThumb2
+      position: {x: -0.0013691006, y: -0.024746964, z: 0.008086738}
+      rotation: {x: -0.05433111, y: 0.047204092, z: 0.13393532, w: 0.9883731}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandThumb4
+      parentName: Nikaido_LeftHandThumb3
+      position: {x: -0.022032687, y: -0.051365606, z: 0.00901172}
+      rotation: {x: 0, y: 0, z: 0.0013734675, w: 0.99999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandIndex1
+      parentName: Nikaido_LeftHand
+      position: {x: -0.07494569, y: -0.08192231, z: 0.106937766}
+      rotation: {x: -0.1318703, y: 0.010202755, z: -0.14951198, w: 0.9798736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandIndex2
+      parentName: Nikaido_LeftHandIndex1
+      position: {x: -0.011595117, y: -0.02842705, z: 0.008349053}
+      rotation: {x: -0.11330459, y: -0.010361887, z: -0.12819485, w: 0.9852009}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandIndex3
+      parentName: Nikaido_LeftHandIndex2
+      position: {x: -0.0022239378, y: -0.03312778, z: 0.0002013195}
+      rotation: {x: -0.05973412, y: 0.15990117, z: -0.07637395, w: 0.9823597}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandIndex4
+      parentName: Nikaido_LeftHandIndex3
+      position: {x: 0.0042547593, y: -0.024764745, z: -0.0036603664}
+      rotation: {x: 0.00035845872, y: -0.58778495, z: 0.0011866776, w: 0.80901635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandMiddle1
+      parentName: Nikaido_LeftHand
+      position: {x: -0.101580605, y: -0.082461, z: 0.08433156}
+      rotation: {x: -0.16123047, y: 0.043456893, z: -0.15230347, w: 0.9741252}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandMiddle2
+      parentName: Nikaido_LeftHandMiddle1
+      position: {x: -0.017113917, y: -0.039046023, z: 0.0070462557}
+      rotation: {x: -0.041032016, y: -0.010861276, z: -0.15860204, w: 0.9864298}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandMiddle3
+      parentName: Nikaido_LeftHandMiddle2
+      position: {x: -0.00064077077, y: -0.027001485, z: 0.0019837203}
+      rotation: {x: -0.08087598, y: -0.009947059, z: -0.16511959, w: 0.9829017}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandMiddle4
+      parentName: Nikaido_LeftHandMiddle3
+      position: {x: 0.0120042665, y: -0.031107876, z: -0.0039624204}
+      rotation: {x: 0.0000006089613, y: -0.0011194536, z: 0.0013474742, w: 0.9999985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandRing1
+      parentName: Nikaido_LeftHand
+      position: {x: -0.11401745, y: -0.086444356, z: 0.052504238}
+      rotation: {x: -0.1547841, y: 0.022976864, z: -0.16458802, w: 0.97387105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandRing2
+      parentName: Nikaido_LeftHandRing1
+      position: {x: -0.014847196, y: -0.038574222, z: 0.008646808}
+      rotation: {x: -0.026573682, y: -0.023152776, z: -0.14754456, w: 0.9884272}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandRing3
+      parentName: Nikaido_LeftHandRing2
+      position: {x: 0.0002050004, y: -0.026720567, z: 0.004106928}
+      rotation: {x: -0.064143255, y: -0.025359562, z: -0.16451319, w: 0.9839604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandRing4
+      parentName: Nikaido_LeftHandRing3
+      position: {x: 0.012323393, y: -0.028982112, z: -0.0002665247}
+      rotation: {x: 0.0000006089945, y: -0.0011195148, z: 0.0013474742, w: 0.9999985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandPinky1
+      parentName: Nikaido_LeftHand
+      position: {x: -0.115640864, y: -0.08753614, z: 0.023126999}
+      rotation: {x: -0.19075754, y: 0.03741901, z: -0.19374762, w: 0.96159935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandPinky2
+      parentName: Nikaido_LeftHandPinky1
+      position: {x: -0.010459991, y: -0.03198563, z: 0.004162795}
+      rotation: {x: 0.016308155, y: -0.02359658, z: -0.13874161, w: 0.9899131}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandPinky3
+      parentName: Nikaido_LeftHandPinky2
+      position: {x: 0.0010389005, y: -0.027230887, z: 0.0047119334}
+      rotation: {x: -0.0428017, y: -0.029471546, z: -0.1621094, w: 0.98540354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftHandPinky4
+      parentName: Nikaido_LeftHandPinky3
+      position: {x: 0.010249561, y: -0.022172768, z: 0.0013515119}
+      rotation: {x: 0, y: 0, z: 0.0015871857, w: 0.99999875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightShoulder
+      parentName: Nikaido_Spine2
+      position: {x: 0.084000014, y: 0.12847717, z: -5.293956e-25}
+      rotation: {x: -0, y: -0.200203, z: -0.01435185, w: 0.97964936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightArm
+      parentName: Nikaido_RightShoulder
+      position: {x: 0.07284207, y: 0.004544067, z: -0.06338739}
+      rotation: {x: 0.1210413, y: 0.20154352, z: 0.29820392, w: 0.9250966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightForeArm
+      parentName: Nikaido_RightArm
+      position: {x: 0.2515846, y: -0.19134876, z: 0.027189638}
+      rotation: {x: 0.12570582, y: 0.17798346, z: -0.002880737, w: 0.9759671}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHand
+      parentName: Nikaido_RightForeArm
+      position: {x: 0.2154616, y: -0.14940935, z: 0.16384941}
+      rotation: {x: 0, y: -0, z: -0.00091041817, w: 0.9999996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandThumb1
+      parentName: Nikaido_RightHand
+      position: {x: 0.005923267, y: -0.05063565, z: 0.050860345}
+      rotation: {x: -0.24642941, y: 0.28078675, z: 0.07903038, w: 0.92422163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandThumb2
+      parentName: Nikaido_RightHandThumb1
+      position: {x: -0.016467465, y: -0.020845486, z: 0.023685817}
+      rotation: {x: -0.22510391, y: -0.08875257, z: -0.23803012, w: 0.94063425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandThumb3
+      parentName: Nikaido_RightHandThumb2
+      position: {x: 0.0014552423, y: -0.024742046, z: 0.008086738}
+      rotation: {x: -0.054329466, y: -0.04720438, z: -0.13050175, w: 0.98883235}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandThumb4
+      parentName: Nikaido_RightHandThumb3
+      position: {x: 0.021854537, y: -0.05144166, z: 0.009011725}
+      rotation: {x: 0, y: -0, z: -0.0041994806, w: 0.9999912}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandIndex1
+      parentName: Nikaido_RightHand
+      position: {x: 0.07502711, y: -0.081847735, z: 0.106937766}
+      rotation: {x: -0.13187566, y: -0.0101149725, z: 0.15113494, w: 0.97962475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandIndex2
+      parentName: Nikaido_RightHandIndex1
+      position: {x: 0.011529105, y: -0.028453883, z: 0.008349055}
+      rotation: {x: -0.10880826, y: -0.024098754, z: 0.12921412, w: 0.9853344}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandIndex3
+      parentName: Nikaido_RightHandIndex2
+      position: {x: 0.0023479806, y: -0.033119805, z: 0.000041656494}
+      rotation: {x: -0.07666795, y: 0.15147404, z: 0.06313308, w: 0.9834591}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandIndex4
+      parentName: Nikaido_RightHandIndex3
+      position: {x: -0.0017547881, y: -0.024755565, z: -0.005373685}
+      rotation: {x: -0.0011254194, y: -0.587798, z: -0.004018952, w: 0.80899704}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandMiddle1
+      parentName: Nikaido_RightHand
+      position: {x: 0.101662554, y: -0.082359925, z: 0.084331594}
+      rotation: {x: -0.16125925, y: -0.04335065, z: 0.1539177, w: 0.9738714}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandMiddle2
+      parentName: Nikaido_RightHandMiddle1
+      position: {x: 0.017023243, y: -0.03908564, z: 0.0070462595}
+      rotation: {x: -0.038307644, y: -0.0064189755, z: 0.1564311, w: 0.9869248}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandMiddle3
+      parentName: Nikaido_RightHandMiddle2
+      position: {x: 0.0008036742, y: -0.026999092, z: 0.0019568242}
+      rotation: {x: -0.100705914, y: 0.16379607, z: 0.15741697, w: 0.96863264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandMiddle4
+      parentName: Nikaido_RightHandMiddle3
+      position: {x: -0.010549688, y: -0.031067211, z: -0.0071439203}
+      rotation: {x: -0.0011254194, y: -0.587798, z: -0.004018952, w: 0.80899704}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandRing1
+      parentName: Nikaido_RightHand
+      position: {x: 0.114103355, y: -0.086330906, z: 0.05250425}
+      rotation: {x: -0.15479922, y: -0.022873644, z: 0.16620286, w: 0.9735968}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandRing2
+      parentName: Nikaido_RightHandRing1
+      position: {x: 0.014757625, y: -0.038608577, z: 0.008646811}
+      rotation: {x: -0.024052521, y: 0.0058442894, z: 0.14511546, w: 0.98910505}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandRing3
+      parentName: Nikaido_RightHandRing2
+      position: {x: 0.000031680713, y: -0.026721116, z: 0.0041083386}
+      rotation: {x: -0.08402105, y: 0.17918377, z: 0.15886308, w: 0.9672622}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandRing4
+      parentName: Nikaido_RightHandRing3
+      position: {x: -0.011869665, y: -0.02893925, z: -0.003678404}
+      rotation: {x: -0.0011254194, y: -0.587798, z: -0.004018952, w: 0.80899704}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandPinky1
+      parentName: Nikaido_RightHand
+      position: {x: 0.115727864, y: -0.087421075, z: 0.023127023}
+      rotation: {x: -0.19078162, y: -0.037292805, z: 0.19534063, w: 0.96127707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandPinky2
+      parentName: Nikaido_RightHandPinky1
+      position: {x: 0.010385726, y: -0.032009818, z: 0.0041627972}
+      rotation: {x: 0.018662645, y: 0.0063180337, z: 0.13558137, w: 0.9905703}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandPinky3
+      parentName: Nikaido_RightHandPinky2
+      position: {x: -0.000780024, y: -0.027234308, z: 0.004742025}
+      rotation: {x: -0.06250694, y: 0.18319732, z: 0.15894192, w: 0.96812654}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightHandPinky4
+      parentName: Nikaido_RightHandPinky3
+      position: {x: -0.01029469, y: -0.02213956, z: -0.0015397521}
+      rotation: {x: -0.0011317864, y: -0.58779836, z: -0.003654209, w: 0.8089985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_Neck
+      parentName: Nikaido_Spine2
+      position: {x: -0, y: 0.15199997, z: -5.293956e-25}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_Head
+      parentName: Nikaido_Neck
+      position: {x: -0, y: 0.24, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftUpLeg
+      parentName: Nikaido_Hips
+      position: {x: -0.14317311, y: -0.033186417, z: 0}
+      rotation: {x: -0.0000096820295, y: 0.00000060443097, z: 5.8521183e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftLeg
+      parentName: Nikaido_LeftUpLeg
+      position: {x: -0.024256637, y: -0.44428608, z: 0.021266226}
+      rotation: {x: 0.000005623123, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftFoot
+      parentName: Nikaido_LeftLeg
+      position: {x: -0.034088597, y: -0.49599016, z: -0.09032641}
+      rotation: {x: 0.0000040589066, y: -0.00000060443097, z: 2.4533288e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_LeftToeBase
+      parentName: Nikaido_LeftFoot
+      position: {x: -0.000000095369224, y: -0.18376733, z: 0.21592525}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightUpLeg
+      parentName: Nikaido_Hips
+      position: {x: 0.14317314, y: -0.033186417, z: 0}
+      rotation: {x: -0.000007756054, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightLeg
+      parentName: Nikaido_RightUpLeg
+      position: {x: 0.024256438, y: -0.44428608, z: 0.021266636}
+      rotation: {x: 0.000005140203, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightFoot
+      parentName: Nikaido_RightLeg
+      position: {x: 0.034088515, y: -0.49599022, z: -0.09032642}
+      rotation: {x: 0.0000026158511, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Nikaido_RightToeBase
+      parentName: Nikaido_RightFoot
+      position: {x: 0.000000095367426, y: -0.18376733, z: 0.21592525}
+      rotation: {x: 0, y: -0.000041891268, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Femme_Mesh
+      parentName: Nikaido(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyelashes
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0.001474206, z: -0.029099043}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyebrows
+      parentName: Femme_Mesh
+      position: {x: -0, y: -0.00024318829, z: -0.028674155}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0666388, y: 1.2454482, z: 1}
+    - name: righteye
+      parentName: Femme_Mesh
+      position: {x: 0.045903284, y: 1.9083053, z: 0.059581723}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 2.33, y: 2.33, z: 2.33}
+    - name: lefteye
+      parentName: Femme_Mesh
+      position: {x: -0.045615118, y: 1.9087249, z: 0.059581723}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 2.33, y: 2.33, z: 2.33}
+    - name: Mask
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0, z: 0.0040555797}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shirt
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0.29176778, z: -0.044465233}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.2634525, y: 1.0547723, z: 1.6883092}
+    - name: pants
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftShoe
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightShoe
+      parentName: Femme_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a982aed3f265699468f4bf32eb618a37, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
