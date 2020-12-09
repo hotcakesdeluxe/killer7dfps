@@ -54,12 +54,14 @@ public class Actor_PlayerInput : ActorBehaviour
         if (value.started)
         {
             isAiming = !isAiming;
-            Debug.Log("aiming " + isAiming);
         }
-        /*else if (value.canceled)
+    }
+    public void OnReload(InputAction.CallbackContext value)
+    {
+        if(value.started)
         {
-            isAiming = false;
-        }*/
+           _shooting.Reload();
+        }
     }
     public void OnScan(InputAction.CallbackContext value)
     {

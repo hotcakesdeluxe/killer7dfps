@@ -11,7 +11,7 @@ public class Actor_Shooting : ActorBehaviour
     [SerializeField] private Transform _fpscam;
     [SerializeField] private BoxCollider _scanZone;
     [SerializeField] private Graphic _reticleGraphic;
-    [SerializeField]private GameObject _muzzleFlare;
+    [SerializeField] private GameObject _muzzleFlare;
     private RectTransform _canvasTransform;
     [SerializeField] private RectTransform _cursorTransform;
     [SerializeField] private float _aimSpeed;
@@ -22,7 +22,7 @@ public class Actor_Shooting : ActorBehaviour
     private float rotX;
     private float rotY;
     private int ammo = 6;
-    private bool _isReloading = false;
+    public bool isReloading = false;
     public LayerMask enemyLayer;
     public override void AssignActorReferences(Actor newActor)
     {
@@ -40,19 +40,11 @@ public class Actor_Shooting : ActorBehaviour
     public override void UpdateBehaviour()
     {
         base.UpdateBehaviour();
-        if (_input.isAiming)
-        {
-            MoveReticule();
-            _reticleGraphic.CrossFadeAlpha(1, 0.1f, true);
-        }
-        else
-        {
-            _reticleGraphic.CrossFadeAlpha(0, 0.1f, true);
-        }
+        MoveReticule();
     }
     public void Fire()
     {
-        if (ammo != 0 && !_isReloading)
+        if (ammo != 0 && !isReloading)
         {
             StartCoroutine(MuzzleFlareRoutine());
             ammo -= 1;
@@ -84,14 +76,28 @@ public class Actor_Shooting : ActorBehaviour
                 Debug.Log("Did not Hit");
             }
         }
+        if(ammo == 0 && !isReloading)
+        {
+            Reload();
+        }
     }
     private void MoveReticule()
     {
-        rotX += _input.smoothInputAim.x * _aimSpeed;
-        rotY += _input.smoothInputAim.y * _aimSpeed;
-        rotX = Mathf.Clamp(rotX, -45, 45);
-        rotY = Mathf.Clamp(rotY, -45, 45);
-        _fpscam.localRotation = Quaternion.Euler(-rotY, rotX, 0f);
+        if (_input.isAiming)
+        {
+            _reticleGraphic.CrossFadeAlpha(1, 0.1f, true);
+            rotX += _input.smoothInputAim.x * _aimSpeed;
+            rotY += _input.smoothInputAim.y * _aimSpeed;
+            rotX = Mathf.Clamp(rotX, -45, 45);
+            rotY = Mathf.Clamp(rotY, -45, 45);
+            _fpscam.localRotation = Quaternion.Euler(-rotY, rotX, 0f);
+        }
+        else
+        {
+            _reticleGraphic.CrossFadeAlpha(0, 0.1f, true);
+            rotX = 0;
+            rotY = 0;
+        }
         /*Vector2 delta = new Vector2(_aimSpeed * _input.smoothInputAim.x * Time.deltaTime, _aimSpeed * _input.smoothInputAim.y * Time.deltaTime);
         Vector2 currentPosition = _cursorTransform.anchoredPosition;
         Vector2 newPosition = currentPosition + delta;
@@ -124,9 +130,16 @@ public class Actor_Shooting : ActorBehaviour
 
         }
     }
-    private void Reload()
+    public void Reload()
     {
-
+        isReloading = true;
+        StartCoroutine(ReloadRoutine());
+    }
+    private IEnumerator ReloadRoutine()
+    {
+        yield return new WaitForSeconds(0.66f);
+        isReloading = false;
+        ammo = 6;
     }
     private IEnumerator MuzzleFlareRoutine()
     {
