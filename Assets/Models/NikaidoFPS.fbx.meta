@@ -1,0 +1,966 @@
+fileFormatVersion: 2
+guid: 0d2d1c85730f2894c8f695c77970b1b6
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Protagonist_FPS_Rig_Gun_Mat
+    second: {fileID: 2100000, guid: 90f5d4b20e85c594e9da7c87ebb6d501, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Protagonist_FPS_Rig_Skin_Mat
+    second: {fileID: 2100000, guid: ce2e0ac637062124babb07ce290bae47, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Protagonist_FPS_Rig:Nikaido_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Protagonist_FPS_Rig:Nikaido_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: NikaidoFPS(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Femme_Mesh
+      parentName: NikaidoFPS(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:body
+      parentName: Protagonist_FPS_Rig:Femme_Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Gun
+      parentName: NikaidoFPS(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.0909297, y: 0.30683127, z: -0.10767868, w: 0.9412713}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_Reference
+      parentName: NikaidoFPS(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_Hips
+      parentName: Protagonist_FPS_Rig:Nikaido_Reference
+      position: {x: -0, y: 1.1999999, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftUpLeg
+      parentName: Protagonist_FPS_Rig:Nikaido_Hips
+      position: {x: -0.14317313, y: -0.033186417, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftLeg
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftUpLeg
+      position: {x: -0.024256486, y: -0.44428557, z: 0.021275992}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftFoot
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftLeg
+      position: {x: -0.034088593, y: -0.49599022, z: -0.09032629}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftToeBase
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftFoot
+      position: {x: -0.000000095367426, y: -0.18376733, z: 0.21592525}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightUpLeg
+      parentName: Protagonist_FPS_Rig:Nikaido_Hips
+      position: {x: 0.14317313, y: -0.033186417, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightLeg
+      parentName: Protagonist_FPS_Rig:Nikaido_RightUpLeg
+      position: {x: 0.024256486, y: -0.44428557, z: 0.021275992}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightFoot
+      parentName: Protagonist_FPS_Rig:Nikaido_RightLeg
+      position: {x: 0.034088593, y: -0.49599022, z: -0.09032629}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightToeBase
+      parentName: Protagonist_FPS_Rig:Nikaido_RightFoot
+      position: {x: 0.000000095367426, y: -0.18376733, z: 0.21592525}
+      rotation: {x: -0, y: -0.000041891268, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_Spine
+      parentName: Protagonist_FPS_Rig:Nikaido_Hips
+      position: {x: -0, y: 0.08399994, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_Spine1
+      parentName: Protagonist_FPS_Rig:Nikaido_Spine
+      position: {x: -0, y: 0.15200011, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_Spine2
+      parentName: Protagonist_FPS_Rig:Nikaido_Spine1
+      position: {x: -0, y: 0.15199997, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftShoulder
+      parentName: Protagonist_FPS_Rig:Nikaido_Spine2
+      position: {x: -0.08400001, y: 0.12847717, z: 0}
+      rotation: {x: -0, y: 0.20020293, z: 0.014351847, w: 0.97964936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftArm
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftShoulder
+      position: {x: -0.07284207, y: 0.004544067, z: -0.06338739}
+      rotation: {x: 0.121059045, y: -0.20159027, z: -0.29820287, w: 0.9250844}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftForeArm
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftArm
+      position: {x: -0.25158212, y: -0.19134718, z: 0.02722219}
+      rotation: {x: 0.12565252, y: -0.17795953, z: 0.0030033023, w: 0.9759779}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHand
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftForeArm
+      position: {x: -0.21549873, y: -0.14935578, z: 0.16384941}
+      rotation: {x: -0, y: -0, z: 0.0002887446, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandThumb1
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHand
+      position: {x: -0.0058728913, y: -0.050641518, z: 0.050860357}
+      rotation: {x: -0.2466151, y: -0.2806223, z: -0.077498116, w: 0.9243518}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandThumb2
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandThumb1
+      position: {x: 0.016419044, y: -0.020883648, z: 0.023685817}
+      rotation: {x: -0.22515461, y: 0.088621676, z: 0.23529837, w: 0.94132155}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandThumb3
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandThumb2
+      position: {x: -0.0013690955, y: -0.024746964, z: 0.008086738}
+      rotation: {x: -0.054330014, y: 0.047204033, z: 0.13393672, w: 0.988373}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandThumb4
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandThumb3
+      position: {x: -0.02203268, y: -0.051365614, z: 0.009011726}
+      rotation: {x: -0, y: -0, z: 0.0013734679, w: 0.9999991}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandIndex1
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHand
+      position: {x: -0.07494565, y: -0.08192232, z: 0.10693778}
+      rotation: {x: -0.1318701, y: 0.010202575, z: -0.1495119, w: 0.9798737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandIndex2
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandIndex1
+      position: {x: -0.01159511, y: -0.028427051, z: 0.008349056}
+      rotation: {x: -0.11330332, y: -0.0103619555, z: -0.12819341, w: 0.9852013}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandIndex3
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandIndex2
+      position: {x: -0.0022239338, y: -0.03312778, z: 0.00020131996}
+      rotation: {x: -0.05973339, y: 0.15990132, z: -0.07637619, w: 0.9823595}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandIndex4
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandIndex3
+      position: {x: 0.0042547616, y: -0.024764743, z: -0.0036603666}
+      rotation: {x: 0.00035845858, y: -0.5877849, z: 0.0011866774, w: 0.80901635}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle1
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHand
+      position: {x: -0.10158058, y: -0.082461014, z: 0.084331594}
+      rotation: {x: -0.16122954, y: 0.043457236, z: -0.15230197, w: 0.97412556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle2
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle1
+      position: {x: -0.01711391, y: -0.039046027, z: 0.007046261}
+      rotation: {x: -0.04103251, y: -0.010861161, z: -0.1586021, w: 0.98642987}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle3
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle2
+      position: {x: -0.00064076704, y: -0.027001485, z: 0.0019837206}
+      rotation: {x: -0.08087682, y: -0.009947157, z: -0.1651198, w: 0.9829015}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle4
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandMiddle3
+      position: {x: 0.012004269, y: -0.031107876, z: -0.0039624237}
+      rotation: {x: 0.00000060896144, y: -0.0011194537, z: 0.0013474737, w: 0.9999985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandRing1
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHand
+      position: {x: -0.11401742, y: -0.08644438, z: 0.05250426}
+      rotation: {x: -0.15478319, y: 0.022976428, z: -0.16458726, w: 0.97387135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandRing2
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandRing1
+      position: {x: -0.01484719, y: -0.038574222, z: 0.008646812}
+      rotation: {x: -0.02657356, y: -0.023152899, z: -0.14754413, w: 0.9884273}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandRing3
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandRing2
+      position: {x: 0.00020500469, y: -0.026720567, z: 0.004106928}
+      rotation: {x: -0.06414389, y: -0.025360003, z: -0.16451739, w: 0.9839596}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandRing4
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandRing3
+      position: {x: 0.012323396, y: -0.028982108, z: -0.00026652808}
+      rotation: {x: 0.00000060899464, y: -0.001119515, z: 0.0013474737, w: 0.9999985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandPinky1
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHand
+      position: {x: -0.11564085, y: -0.08753615, z: 0.02312703}
+      rotation: {x: -0.19075774, y: 0.037419423, z: -0.19374733, w: 0.96159935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandPinky2
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandPinky1
+      position: {x: -0.0104599865, y: -0.03198563, z: 0.0041627977}
+      rotation: {x: 0.016305247, y: -0.023596266, z: -0.13874248, w: 0.9899131}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandPinky3
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandPinky2
+      position: {x: 0.001038905, y: -0.027230887, z: 0.004711933}
+      rotation: {x: -0.04280133, y: -0.029470744, z: -0.16210577, w: 0.98540413}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_LeftHandPinky4
+      parentName: Protagonist_FPS_Rig:Nikaido_LeftHandPinky3
+      position: {x: 0.010249564, y: -0.022172766, z: 0.0013514996}
+      rotation: {x: -0, y: -0, z: 0.0015871853, w: 0.99999875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightShoulder
+      parentName: Protagonist_FPS_Rig:Nikaido_Spine2
+      position: {x: 0.08400001, y: 0.12847717, z: 0}
+      rotation: {x: -0, y: -0.20020293, z: -0.014351847, w: 0.97964936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightArm
+      parentName: Protagonist_FPS_Rig:Nikaido_RightShoulder
+      position: {x: 0.07284207, y: 0.004544067, z: -0.06338739}
+      rotation: {x: 0.12105626, y: 0.20159191, z: 0.2981901, w: 0.9250885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightForeArm
+      parentName: Protagonist_FPS_Rig:Nikaido_RightArm
+      position: {x: 0.2515874, y: -0.19134021, z: 0.02722219}
+      rotation: {x: 0.12567224, y: 0.17794573, z: -0.0028684621, w: 0.97597826}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHand
+      parentName: Protagonist_FPS_Rig:Nikaido_RightForeArm
+      position: {x: 0.21546157, y: -0.14940938, z: 0.16384941}
+      rotation: {x: -0, y: -0, z: -0.0009104183, w: 0.99999964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:GunOffset
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHand
+      position: {x: 0.047725033, y: -0.09553382, z: 0.059252966}
+      rotation: {x: 0.49857816, y: 0.15146637, z: 0.47176686, w: 0.7112762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:GunMover
+      parentName: Protagonist_FPS_Rig:GunOffset
+      position: {x: -0, y: 0, z: -0.01}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Handle
+      parentName: Protagonist_FPS_Rig:GunMover
+      position: {x: 0.00030825334, y: 0.03728701, z: 0.060696192}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Handle 1
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Handle_bolt
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Handle_bolt001
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Plastic
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Plastic_bolt
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Plastic_bolt001
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Ring
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: -0.00051374437, y: -0.098655105, z: -0.07871794}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Spusk01
+      parentName: Protagonist_FPS_Rig:Handle
+      position: {x: 0.0004290989, y: 0.04255442, z: 0.09023738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Kurok
+      parentName: Protagonist_FPS_Rig:GunMover
+      position: {x: 0.0004013922, y: 0.08659589, z: 0.055657566}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Lock
+      parentName: Protagonist_FPS_Rig:GunMover
+      position: {x: 0.00056119723, y: 0.12665245, z: 0.07438522}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Lock 1
+      parentName: Protagonist_FPS_Rig:Lock
+      position: {x: 0.00017615521, y: -0.046810992, z: 0.07654839}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Lock_bolt
+      parentName: Protagonist_FPS_Rig:Lock
+      position: {x: 0.00017615521, y: -0.046810992, z: 0.07654839}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Lock_bolt001
+      parentName: Protagonist_FPS_Rig:Lock
+      position: {x: 0.00017615521, y: -0.046810992, z: 0.07654839}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Spusk02
+      parentName: Protagonist_FPS_Rig:GunMover
+      position: {x: 0.0005402371, y: 0.063720465, z: 0.107375525}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:spusk_bolt
+      parentName: Protagonist_FPS_Rig:GunMover
+      position: {x: 0.0007373524, y: 0.07984145, z: 0.15093361}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Stvol
+      parentName: Protagonist_FPS_Rig:GunMover
+      position: {x: 0.00080691755, y: 0.08024006, z: 0.16005252}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Baraban
+      parentName: Protagonist_FPS_Rig:Stvol
+      position: {x: -0.000010210555, y: 0.026021695, z: -0.009256166}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Side
+      parentName: Protagonist_FPS_Rig:Stvol
+      position: {x: -0.00006956504, y: -0.0003986071, z: -0.009118912}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Side_bolt
+      parentName: Protagonist_FPS_Rig:Stvol
+      position: {x: -0.00006956504, y: -0.0003986071, z: -0.009118912}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Stvol 1
+      parentName: Protagonist_FPS_Rig:Stvol
+      position: {x: -0.00006956504, y: -0.0003986071, z: -0.009118912}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Side001
+      parentName: Protagonist_FPS_Rig:Stvol 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Side_bolt001
+      parentName: Protagonist_FPS_Rig:Stvol 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandThumb1
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHand
+      position: {x: 0.0059232605, y: -0.05063565, z: 0.050860357}
+      rotation: {x: -0.24642889, y: 0.28078526, z: 0.079030305, w: 0.9242222}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandThumb2
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandThumb1
+      position: {x: -0.016467469, y: -0.020845486, z: 0.023685817}
+      rotation: {x: -0.22510077, y: -0.08875434, z: -0.23802957, w: 0.94063497}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandThumb3
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandThumb2
+      position: {x: 0.0014552404, y: -0.024742046, z: 0.008086738}
+      rotation: {x: -0.054330334, y: -0.047204554, z: -0.13050191, w: 0.9888323}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandThumb4
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandThumb3
+      position: {x: 0.021854531, y: -0.05144166, z: 0.009011726}
+      rotation: {x: -0, y: -0, z: -0.00419948, w: 0.9999912}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandIndex1
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHand
+      position: {x: 0.0750271, y: -0.081847735, z: 0.10693778}
+      rotation: {x: -0.13187717, y: -0.010115215, z: 0.15113653, w: 0.9796244}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandIndex2
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandIndex1
+      position: {x: 0.011529102, y: -0.028453887, z: 0.008349056}
+      rotation: {x: -0.108807094, y: -0.02409905, z: 0.12920979, w: 0.985335}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandIndex3
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandIndex2
+      position: {x: 0.0023479785, y: -0.033119805, z: 0.000041656578}
+      rotation: {x: -0.076669745, y: 0.15147375, z: 0.06313427, w: 0.983459}
+      scale: {x: 0.9999999, y: 0.99999976, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandIndex4
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandIndex3
+      position: {x: -0.0017547891, y: -0.024755565, z: -0.0053736856}
+      rotation: {x: -0.0011254192, y: -0.58779794, z: -0.0040189517, w: 0.8089971}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandMiddle1
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHand
+      position: {x: 0.10166255, y: -0.08235993, z: 0.084331594}
+      rotation: {x: -0.1612596, y: -0.043350067, z: 0.15391862, w: 0.9738713}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandMiddle2
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandMiddle1
+      position: {x: 0.017023241, y: -0.03908564, z: 0.007046261}
+      rotation: {x: -0.03830851, y: -0.00641927, z: 0.1564308, w: 0.9869248}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandMiddle3
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandMiddle2
+      position: {x: 0.0008036725, y: -0.026999092, z: 0.0019568242}
+      rotation: {x: -0.10070449, y: 0.16379552, z: 0.15741873, w: 0.9686325}
+      scale: {x: 0.9999999, y: 0.99999976, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandMiddle4
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandMiddle3
+      position: {x: -0.01054969, y: -0.031067211, z: -0.0071439217}
+      rotation: {x: -0.0011254192, y: -0.58779794, z: -0.0040189517, w: 0.8089971}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandRing1
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHand
+      position: {x: 0.11410334, y: -0.08633092, z: 0.05250426}
+      rotation: {x: -0.15479904, y: -0.02287366, z: 0.16620256, w: 0.9735968}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandRing2
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandRing1
+      position: {x: 0.014757622, y: -0.038608577, z: 0.008646812}
+      rotation: {x: -0.024053395, y: 0.0058445306, z: 0.14511794, w: 0.9891047}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandRing3
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandRing2
+      position: {x: 0.000031678905, y: -0.026721116, z: 0.004108338}
+      rotation: {x: -0.08402137, y: 0.17918386, z: 0.15886275, w: 0.9672622}
+      scale: {x: 0.9999999, y: 0.99999976, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandRing4
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandRing3
+      position: {x: -0.011869666, y: -0.028939249, z: -0.0036784052}
+      rotation: {x: -0.0011254192, y: -0.58779794, z: -0.0040189517, w: 0.8089971}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandPinky1
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHand
+      position: {x: 0.115727864, y: -0.08742108, z: 0.02312703}
+      rotation: {x: -0.19078246, y: -0.037293125, z: 0.19534114, w: 0.96127677}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandPinky2
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandPinky1
+      position: {x: 0.010385723, y: -0.032009818, z: 0.0041627977}
+      rotation: {x: 0.018662572, y: 0.0063183215, z: 0.13558294, w: 0.99057007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandPinky3
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandPinky2
+      position: {x: -0.00078002585, y: -0.027234308, z: 0.004742025}
+      rotation: {x: -0.062506, y: 0.18319713, z: 0.15894265, w: 0.96812654}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_RightHandPinky4
+      parentName: Protagonist_FPS_Rig:Nikaido_RightHandPinky3
+      position: {x: -0.0102946935, y: -0.02213956, z: -0.0015397441}
+      rotation: {x: -0.0011317868, y: -0.5877984, z: -0.0036542097, w: 0.80899847}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: Protagonist_FPS_Rig:Nikaido_Neck
+      parentName: Protagonist_FPS_Rig:Nikaido_Spine2
+      position: {x: -0, y: 0.15199997, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Protagonist_FPS_Rig:Nikaido_Head
+      parentName: Protagonist_FPS_Rig:Nikaido_Neck
+      position: {x: -0, y: 0.24, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 0
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

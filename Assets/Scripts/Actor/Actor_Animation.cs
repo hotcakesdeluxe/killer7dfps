@@ -5,6 +5,7 @@ using UnityEngine;
 public class Actor_Animation : ActorBehaviour
 {
     [SerializeField]private Animator _animator;
+    [SerializeField]private Animator _FPSanimator;
     public Animator animator => _animator;
     private Actor_CharacterController _characterController;
     private Actor_PlayerInput _input;
@@ -23,5 +24,9 @@ public class Actor_Animation : ActorBehaviour
         base.UpdateBehaviour();
         _animator.SetFloat("MoveSpeed", Mathf.Abs(_characterController.forwardAmount)*10 );
         _animator.SetBool("IsAiming", _input.isAiming);
+        if(_input.isAiming)
+        {
+            _FPSanimator.SetBool("IsAiming", _input.isAiming);
+        }
     }
 }

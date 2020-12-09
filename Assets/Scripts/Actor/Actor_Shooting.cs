@@ -11,6 +11,7 @@ public class Actor_Shooting : ActorBehaviour
     [SerializeField] private Transform _fpscam;
     [SerializeField] private BoxCollider _scanZone;
     [SerializeField] private Graphic _reticleGraphic;
+    [SerializeField]private GameObject _muzzleFlare;
     private RectTransform _canvasTransform;
     [SerializeField] private RectTransform _cursorTransform;
     [SerializeField] private float _aimSpeed;
@@ -53,6 +54,8 @@ public class Actor_Shooting : ActorBehaviour
     {
         if (ammo != 0 && !_isReloading)
         {
+            StartCoroutine(MuzzleFlareRoutine());
+            ammo -= 1;
             RaycastHit hit;
             Vector3 castDir = _cursorTransform.position - _camera.FirstPersonCam.transform.position;
             if (Physics.Raycast(_camera.FirstPersonCam.transform.position, castDir, out hit, Mathf.Infinity, enemyLayer))
@@ -124,6 +127,12 @@ public class Actor_Shooting : ActorBehaviour
     private void Reload()
     {
 
+    }
+    private IEnumerator MuzzleFlareRoutine()
+    {
+        _muzzleFlare.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        _muzzleFlare.SetActive(false);
     }
     private void GetMinMaxRect()
     {
