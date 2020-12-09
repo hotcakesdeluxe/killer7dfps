@@ -6,6 +6,7 @@ public class Actor_Camera : ActorBehaviour
 {
     private Actor_PlayerInput _input;
     public Camera FirstPersonCam;
+    public Camera ThirdPersonCam;
     public GameObject FPS_vcam;
     public GameObject ThirdPerson_vcam;
     public override void AssignActorReferences(Actor newActor)
@@ -29,6 +30,7 @@ public class Actor_Camera : ActorBehaviour
             FPS_vcam.SetActive(true);
             ThirdPerson_vcam.SetActive(false);
             FirstPersonCam.enabled = true;
+            ThirdPersonCam.enabled = false;
 
         }
         else
@@ -36,6 +38,7 @@ public class Actor_Camera : ActorBehaviour
             FPS_vcam.SetActive(false);
             ThirdPerson_vcam.SetActive(true);
             FirstPersonCam.enabled = false;
+            ThirdPersonCam.enabled = true;
         }
     }
 }

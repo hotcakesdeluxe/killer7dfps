@@ -1,117 +1,17 @@
 fileFormatVersion: 2
-guid: a982aed3f265699468f4bf32eb618a37
+guid: c133f058f0b1e2a4eb5290016067c349
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Take 001
+    second: Idle
   - first:
       74: 9185161093348180481
     second: fuck
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cuff_Mat
-    second: {fileID: 2100000, guid: 1d3702da33fdd334d82151b734f06b7a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Eye_Mat
-    second: {fileID: 2100000, guid: 606a30df5206f404880f044706527dcc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: GasMask_Mat
-    second: {fileID: 2100000, guid: a7bb277834b3ad44984eb653be55c63f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gun_Mat
-    second: {fileID: 2100000, guid: 90f5d4b20e85c594e9da7c87ebb6d501, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Hair_Mat
-    second: {fileID: 2100000, guid: 939e1c0790da9324186b81528e53d1a0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mask_Mat
-    second: {fileID: 2100000, guid: d648ed882258f904b812ee348cc87673, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Pants_Mat
-    second: {fileID: 2100000, guid: d75c63dd958f80a4eb1b5c437f38d7dd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Cuff_Mat
-    second: {fileID: 2100000, guid: 1d3702da33fdd334d82151b734f06b7a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Eye_Mat
-    second: {fileID: 2100000, guid: 606a30df5206f404880f044706527dcc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_GasMask_Mat
-    second: {fileID: 2100000, guid: a7bb277834b3ad44984eb653be55c63f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Gun_Mat
-    second: {fileID: 2100000, guid: 90f5d4b20e85c594e9da7c87ebb6d501, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Hair_Mat
-    second: {fileID: 2100000, guid: 939e1c0790da9324186b81528e53d1a0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Mask_Mat
-    second: {fileID: 2100000, guid: d648ed882258f904b812ee348cc87673, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Pants_Mat
-    second: {fileID: 2100000, guid: d75c63dd958f80a4eb1b5c437f38d7dd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Shirt_Mat
-    second: {fileID: 2100000, guid: 8606c5249d2e85343857246b49c03bf3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Skin_Mat
-    second: {fileID: 2100000, guid: ce2e0ac637062124babb07ce290bae47, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protagonist_Rig_Sneaker_Mat
-    second: {fileID: 2100000, guid: c231bf3689077e743abd63d044561d55, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shirt_Mat
-    second: {fileID: 2100000, guid: 8606c5249d2e85343857246b49c03bf3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Skin_Mat
-    second: {fileID: 2100000, guid: ce2e0ac637062124babb07ce290bae47, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sneaker_Mat
-    second: {fileID: 2100000, guid: c231bf3689077e743abd63d044561d55, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -129,14 +29,43 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.9
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -1122,11 +1051,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: a982aed3f265699468f4bf32eb618a37, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 

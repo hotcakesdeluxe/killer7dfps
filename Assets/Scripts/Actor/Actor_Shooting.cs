@@ -8,6 +8,7 @@ public class Actor_Shooting : ActorBehaviour
     private Actor_PlayerInput _input;
     private Actor_Camera _camera;
     private Canvas _canvas;
+    [SerializeField] private Transform _fpscam;
     [SerializeField] private BoxCollider _scanZone;
     [SerializeField] private Graphic _reticleGraphic;
     private RectTransform _canvasTransform;
@@ -17,6 +18,10 @@ public class Actor_Shooting : ActorBehaviour
     private float maxX;
     private float minY;
     private float maxY;
+    private float rotX;
+    private float rotY;
+    private int ammo = 6;
+    private bool _isReloading = false;
     public LayerMask enemyLayer;
     public override void AssignActorReferences(Actor newActor)
     {
@@ -46,27 +51,45 @@ public class Actor_Shooting : ActorBehaviour
     }
     public void Fire()
     {
-        RaycastHit hit;
-        Vector3 castDir = _cursorTransform.position - _camera.FirstPersonCam.transform.position;
-        if (Physics.Raycast(_camera.FirstPersonCam.transform.position, castDir, out hit, Mathf.Infinity, enemyLayer))
+        if (ammo != 0 && !_isReloading)
         {
-            Debug.DrawRay(_camera.FirstPersonCam.transform.position, castDir * hit.distance, Color.yellow);
-            Debug.Log("Did Hit " + hit.transform);
-            Actor enemy = hit.transform.gameObject.GetComponent<Actor>();
-            if (enemy.GetBehaviour<Actor_Enemy>().isShootable)
+            RaycastHit hit;
+            Vector3 castDir = _cursorTransform.position - _camera.FirstPersonCam.transform.position;
+            if (Physics.Raycast(_camera.FirstPersonCam.transform.position, castDir, out hit, Mathf.Infinity, enemyLayer))
             {
-                enemy.GetBehaviour<Actor_Enemy>().Death();
+                Debug.DrawRay(_camera.FirstPersonCam.transform.position, castDir * hit.distance, Color.yellow);
+
+                if (hit.transform.gameObject.tag == "Weakpoint")
+                {
+                    Debug.Log("NOW THATS WHAT I CALL DAMAGE");
+                }
+                else if (hit.transform.gameObject.tag == "Enemy")
+                {
+                    //could maybe clean these get components up with the hitbox root system?
+                    Actor enemy = hit.transform.gameObject.GetComponentInParent<Actor>();
+                    Debug.Log("Did Hit " + hit.transform);
+                    if (enemy.GetBehaviour<Actor_Enemy>().isShootable)
+                    {
+                        //enemy.GetBehaviour<Actor_Enemy>().Death();
+                    }
+                }
+
             }
-        }
-        else
-        {
-            Debug.DrawRay(_camera.FirstPersonCam.transform.position, castDir * 1000, Color.white);
-            Debug.Log("Did not Hit");
+            else
+            {
+                Debug.DrawRay(_camera.FirstPersonCam.transform.position, castDir * 1000, Color.white);
+                Debug.Log("Did not Hit");
+            }
         }
     }
     private void MoveReticule()
     {
-        Vector2 delta = new Vector2(_aimSpeed * _input.smoothInputAim.x * Time.deltaTime, _aimSpeed * _input.smoothInputAim.y * Time.deltaTime);
+        rotX += _input.smoothInputAim.x * _aimSpeed;
+        rotY += _input.smoothInputAim.y * _aimSpeed;
+        rotX = Mathf.Clamp(rotX, -45, 45);
+        rotY = Mathf.Clamp(rotY, -45, 45);
+        _fpscam.localRotation = Quaternion.Euler(-rotY, rotX, 0f);
+        /*Vector2 delta = new Vector2(_aimSpeed * _input.smoothInputAim.x * Time.deltaTime, _aimSpeed * _input.smoothInputAim.y * Time.deltaTime);
         Vector2 currentPosition = _cursorTransform.anchoredPosition;
         Vector2 newPosition = currentPosition + delta;
         if (_canvas != null)
@@ -76,19 +99,31 @@ public class Actor_Shooting : ActorBehaviour
             newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
             newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
         }
-        _cursorTransform.anchoredPosition = newPosition;
+        _cursorTransform.anchoredPosition = newPosition;*/
     }
     public void Scan()
     {
         Collider[] overlaps = _scanZone.OverlapBox(enemyLayer);
         foreach (Collider overlap in overlaps)
         {
-            Debug.Log(overlap.gameObject.name);
-            Actor enemy = overlap.GetComponent<Actor>();
-            enemy.GetBehaviour<Actor_Enemy>().MaterialSwap();
-            enemy.GetBehaviour<Actor_Enemy>().isShootable = true;
-            //do stuff with hitboxes maybe?
+            if (overlap.transform.gameObject.tag == "Enemy")
+            {
+                Actor enemy = overlap.GetComponentInParent<Actor>();
+                enemy.GetBehaviour<Actor_Enemy>().MaterialSwap();
+                enemy.GetBehaviour<Actor_Enemy>().isShootable = true;
+                //do stuff with hitboxes maybe?
+            }
+            if (overlap.transform.gameObject.tag == "Weakpoint")
+            {
+                Actor enemy = overlap.GetComponentInParent<Actor>();
+                enemy.GetBehaviour<Actor_Weakpoint>().RevealWeakpoint();
+            }
+
         }
+    }
+    private void Reload()
+    {
+
     }
     private void GetMinMaxRect()
     {

@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Actor_Animation : ActorBehaviour
+public class Actor_EnemyAnimation : ActorBehaviour
 {
     [SerializeField]private Animator _animator;
     public Animator animator => _animator;
-    private Actor_CharacterController _characterController;
-    private Actor_PlayerInput _input;
+
     public override void AssignActorReferences(Actor newActor)
     {
         base.AssignActorReferences(newActor);
-        _characterController = GetBehaviour<Actor_CharacterController>();
-        _input = GetBehaviour<Actor_PlayerInput>();
+
     }
     public override void InitializeBehaviour(Actor newActor)
     {
@@ -21,7 +19,5 @@ public class Actor_Animation : ActorBehaviour
     public override void UpdateBehaviour()
     {
         base.UpdateBehaviour();
-        _animator.SetFloat("MoveSpeed", Mathf.Abs(_characterController.forwardAmount)*10 );
-        _animator.SetBool("IsAiming", _input.isAiming);
     }
 }

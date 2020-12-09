@@ -6,6 +6,7 @@ public class Actor_PlayerInput : ActorBehaviour
 {
     [SerializeField] private PlayerInput _playerInput;
     private Actor_CharacterController _characterController;
+    private Actor_Animation _animation;
     private Actor_Shooting _shooting;
     private Vector2 _rawInputMovement;
     private Vector2 _rawInputAim;
@@ -53,6 +54,7 @@ public class Actor_PlayerInput : ActorBehaviour
         if (value.started)
         {
             isAiming = !isAiming;
+            Debug.Log("aiming " + isAiming);
         }
         /*else if (value.canceled)
         {
