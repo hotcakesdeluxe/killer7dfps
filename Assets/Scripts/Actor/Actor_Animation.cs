@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Actor_Animation : ActorBehaviour
 {
-    [SerializeField]private Animator _animator;
-    [SerializeField]private Animator _FPSanimator;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _FPSanimator;
     public Animator animator => _animator;
     private Actor_CharacterController _characterController;
     private Actor_PlayerInput _input;
@@ -22,11 +22,18 @@ public class Actor_Animation : ActorBehaviour
     public override void UpdateBehaviour()
     {
         base.UpdateBehaviour();
-        _animator.SetFloat("MoveSpeed", Mathf.Abs(_characterController.forwardAmount)*10 );
+        _animator.SetFloat("MoveSpeed", Mathf.Abs(_characterController.forwardAmount) * 10);
         _animator.SetBool("IsAiming", _input.isAiming);
-        if(_input.isAiming)
+
+        if (_input.isAiming)
         {
             _FPSanimator.SetBool("IsAiming", _input.isAiming);
+            _FPSanimator.SetBool("IsFiring", _input.isFiring);
         }
+        
+    }
+    public void PlayReload()
+    {
+        _animator.Play("Reload");
     }
 }

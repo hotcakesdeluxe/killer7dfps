@@ -45,7 +45,7 @@ public class Actor_Camera : ActorBehaviour
             FirstPersonCam.enabled = false;
             ThirdPersonCam.enabled = true;
         }
-        if (_shooting.isReloading)
+        if (_shooting.isReload)
         {
             FPS_vcam.SetActive(false);
             ThirdPerson_vcam.SetActive(false);

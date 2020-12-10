@@ -15,8 +15,12 @@ public class Actor_PlayerInput : ActorBehaviour
     [HideInInspector]
     public Vector2 smoothInputMovement;
     public float movementSmoothingSpeed = 1f;
+    [SerializeField] private float _timeBetweenShots;
     [HideInInspector]
     public bool isAiming = false;
+    public bool isFiring = false;
+    public bool isReloading = false;
+    private bool _canShoot = true;
     private string currentControlScheme;
     public override void AssignActorReferences(Actor newActor)
     {
@@ -39,9 +43,20 @@ public class Actor_PlayerInput : ActorBehaviour
     }
     public void OnFire(InputAction.CallbackContext value)
     {
-        if(isAiming && value.started)
+        if (isAiming && value.started)
         {
-            _shooting.Fire();
+            if (_canShoot)
+            {
+                _canShoot = false;
+                StartCoroutine(TimerRoutine());
+                _shooting.Fire();
+                isFiring = true;
+            }
+
+        }
+        if (value.canceled)
+        {
+            isFiring = false;
         }
     }
     public void OnAim(InputAction.CallbackContext value)
@@ -50,7 +65,7 @@ public class Actor_PlayerInput : ActorBehaviour
     }
     public void OnToggleAim(InputAction.CallbackContext value)
     {
-       
+
         if (value.started)
         {
             isAiming = !isAiming;
@@ -58,14 +73,14 @@ public class Actor_PlayerInput : ActorBehaviour
     }
     public void OnReload(InputAction.CallbackContext value)
     {
-        if(value.started)
+        if (value.started)
         {
-           _shooting.Reload();
+            _shooting.Reload();
         }
     }
     public void OnScan(InputAction.CallbackContext value)
     {
-        if(isAiming && value.started)
+        if (isAiming && value.started)
         {
             _shooting.Scan();
         }
@@ -73,6 +88,16 @@ public class Actor_PlayerInput : ActorBehaviour
     private void CalculateMovementInputSmoothing()
     {
         smoothInputMovement = Vector2.Lerp(smoothInputMovement, _rawInputMovement, Time.deltaTime * movementSmoothingSpeed);
+    }
+    private IEnumerator TimerRoutine()
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime <= _timeBetweenShots)
+        {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        _canShoot = true;
     }
     public void OnControlsChanged()
     {
