@@ -13,7 +13,8 @@ public enum DamageTeam
 
 public enum DamageType
 {
-    Base
+    Base,
+    Weakpoint
 }
 
 [System.Serializable]
@@ -21,8 +22,6 @@ public struct DamageInfo
 {
     public Actor source;
     public float amount;
-    public float hitStopTime;
-    public Vector3 force;
     public DamageTeam damageTeam;
     public DamageType damageType;
 

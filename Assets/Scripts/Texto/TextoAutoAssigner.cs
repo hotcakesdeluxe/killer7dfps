@@ -62,14 +62,17 @@ public class TextoAutoAssigner : MonoBehaviour
 
     public void UpdateText()
     {
-        if (_textMeshPro != null)
+        if (TextoFontDatabase.instance != null)
         {
-            TextoFontDatabase.instance.AssignFont(_textMeshPro, _baseTMPFont, _baseTMPMaterial);
-        }
+            if (_textMeshPro != null)
+            {
+                TextoFontDatabase.instance.AssignFont(_textMeshPro, _baseTMPFont, _baseTMPMaterial);
+            }
 
-        if(_text != null)
-        {
-            TextoFontDatabase.instance.AssignFont(_text, _baseFont);
+            if (_text != null)
+            {
+                TextoFontDatabase.instance.AssignFont(_text, _baseFont);
+            }
         }
 
         if (_texto != null)

@@ -45,16 +45,25 @@ public class Actor_Crossroads : ActorBehaviour
             _crossroadCanvasGroup.alpha = Mathf.Lerp(start, end, fadeTime/duration);
             yield return null;
         }
+        if(_crossroadCanvasGroup.alpha <= 0)
+        {
+            _crossroadCanvas.gameObject.SetActive(false);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         _pathsButtonsHolder = other.GetComponent<PathsButtonsHolder>();
         _crossroadCanvas = other.transform.GetChild(0).GetComponent<Canvas>();
         _crossroadCanvasGroup = _crossroadCanvas.GetComponent<CanvasGroup>();
+        _crossroadCanvas.gameObject.SetActive(true);
         _eventSystem.firstSelectedGameObject = _pathsButtonsHolder.Buttons[0].gameObject;
         _eventSystem.SetSelectedGameObject(_pathsButtonsHolder.Buttons[0].gameObject);
         FadeCanvas();
         RegisterButtons();
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        FadeCanvas();
     }
     private void RegisterButtons()
     {

@@ -7,7 +7,9 @@ using PHL.Common.Utility;
 public class Actor_CharacterController : ActorBehaviour
 {
     private Actor_PlayerInput _input;
+    private Actor_Camera _camera;
     [SerializeField] private GameObject _modelPrefab;
+    public GameObject modelPrefab => _modelPrefab;
     public PathCreator pathCreator;
     public EndOfPathInstruction endOfPathInstruction;
     public double distanceOnPath { get; private set; } //0-1 value
@@ -22,6 +24,7 @@ public class Actor_CharacterController : ActorBehaviour
     {
         base.AssignActorReferences(newActor);
         _input = GetBehaviour<Actor_PlayerInput>();
+        _camera = GetBehaviour<Actor_Camera>();
     }
     public override void InitializeBehaviour(Actor newActor)
     {
@@ -48,7 +51,7 @@ public class Actor_CharacterController : ActorBehaviour
     {
         if (pathCreator != null)
         {
-            if (!_input.isAiming)
+            if (!_input.isAiming && !_camera.isHit)
             {
                 forwardAmount = _input.smoothInputMovement.y * _movementSpeed;
                 distanceTravelled += forwardAmount;

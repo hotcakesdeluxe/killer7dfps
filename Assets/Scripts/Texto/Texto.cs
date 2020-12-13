@@ -7,6 +7,7 @@ namespace PHL.Texto
 {
     public enum TextoLanguage
     {
+        None,
         English,
         French,
         Italian,
@@ -26,11 +27,72 @@ namespace PHL.Texto
     {
         public static TextoLanguage currentLanguage { get; private set; }
         public static SecureEvent languageUpdatedEvent { get; private set; } = new SecureEvent();
-        
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void Initialize()
+        {
+            ChooseApplicationLanguage();
+        }
+
         public static void SetLanguage(TextoLanguage newLanguage)
         {
             currentLanguage = newLanguage;
             languageUpdatedEvent.Invoke();
+        }
+
+        private static void ChooseApplicationLanguage()
+        {
+            if(TextoSettingsData.instance.overrideLanguage != TextoLanguage.None)
+            {
+                SetLanguage(TextoSettingsData.instance.overrideLanguage);
+                return;
+            }
+
+            switch (Application.systemLanguage)
+            {
+                case SystemLanguage.English:
+                    SetLanguage(TextoLanguage.English);
+                    break;
+                case SystemLanguage.French:
+                    SetLanguage(TextoLanguage.French);
+                    break;
+                case SystemLanguage.Italian:
+                    SetLanguage(TextoLanguage.Italian);
+                    break;
+                case SystemLanguage.German:
+                    SetLanguage(TextoLanguage.German);
+                    break;
+                case SystemLanguage.Spanish:
+                    SetLanguage(TextoLanguage.Spanish);
+                    break;
+                case SystemLanguage.Portuguese:
+                    SetLanguage(TextoLanguage.BrazilianPortuguese);
+                    break;
+                case SystemLanguage.ChineseSimplified:
+                    SetLanguage(TextoLanguage.SimplifiedChinese);
+                    break;
+                case SystemLanguage.ChineseTraditional:
+                    SetLanguage(TextoLanguage.SimplifiedChinese);
+                    break;
+                case SystemLanguage.Chinese:
+                    SetLanguage(TextoLanguage.SimplifiedChinese);
+                    break;
+                case SystemLanguage.Russian:
+                    SetLanguage(TextoLanguage.Russian);
+                    break;
+                case SystemLanguage.Japanese:
+                    SetLanguage(TextoLanguage.Japanese);
+                    break;
+                case SystemLanguage.Arabic:
+                    SetLanguage(TextoLanguage.Arabic);
+                    break;
+                case SystemLanguage.Polish:
+                    SetLanguage(TextoLanguage.Polish);
+                    break;
+                default:
+                    SetLanguage(TextoLanguage.English);
+                    break;
+            }
         }
 
         public static TextoLanguage StringToLanguage(string languageString)
@@ -86,7 +148,7 @@ namespace PHL.Texto
                 return TextoLanguage.Polish;
             }
 
-            return TextoLanguage.English;
+            return TextoLanguage.None;
         }
     }
 }

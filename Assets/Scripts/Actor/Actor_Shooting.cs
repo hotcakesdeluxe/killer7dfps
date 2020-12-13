@@ -8,6 +8,7 @@ public class Actor_Shooting : ActorBehaviour
     private Actor_PlayerInput _input;
     private Actor_Camera _camera;
     private Actor_Animation _animation;
+    private Actor_CharacterController _characterController;
     private Canvas _canvas;
     [SerializeField] private Transform _fpscam;
     [SerializeField] private BoxCollider _scanZone;
@@ -16,6 +17,7 @@ public class Actor_Shooting : ActorBehaviour
     private RectTransform _canvasTransform;
     [SerializeField] private RectTransform _cursorTransform;
     [SerializeField] private float _aimSpeed;
+    [SerializeField] private float _damage;
 
     private float minX;
     private float maxX;
@@ -33,6 +35,7 @@ public class Actor_Shooting : ActorBehaviour
         _input = GetBehaviour<Actor_PlayerInput>();
         _camera = GetBehaviour<Actor_Camera>();
         _animation = GetBehaviour<Actor_Animation>();
+        _characterController = GetBehaviour<Actor_CharacterController>();
     }
     public override void InitializeBehaviour(Actor newActor)
     {
@@ -58,22 +61,31 @@ public class Actor_Shooting : ActorBehaviour
             if (Physics.Raycast(_camera.FirstPersonCam.transform.position, castDir, out hit, Mathf.Infinity, enemyLayer))
             {
                 Debug.DrawRay(_camera.FirstPersonCam.transform.position, castDir * hit.distance, Color.yellow);
-
-                if (hit.transform.gameObject.tag == "Weakpoint")
+                HashSet<HitboxRoot> rootsHit = new HashSet<HitboxRoot>();
+                Actor enemy = hit.transform.gameObject.GetComponentInParent<Actor>();
+                if (enemy.GetBehaviour<Actor_Enemy>().isShootable)
                 {
-                    Debug.Log("NOW THATS WHAT I CALL DAMAGE");
-                }
-                else if (hit.transform.gameObject.tag == "Enemy")
-                {
-                    //could maybe clean these get components up with the hitbox root system?
-                    Actor enemy = hit.transform.gameObject.GetComponentInParent<Actor>();
-                    Debug.Log("Did Hit " + hit.transform);
-                    if (enemy.GetBehaviour<Actor_Enemy>().isShootable)
+                    HitboxCollider hitbox = hit.transform.GetComponent<HitboxCollider>();
+                    DamageType damageType = DamageType.Base;
+                    if (hitbox != null)
                     {
-                        //enemy.GetBehaviour<Actor_Enemy>().Death();
+                        if (!rootsHit.Contains(hitbox.root))
+                        {
+                            rootsHit.Add(hitbox.root);
+                            if(hitbox.gameObject.tag == "Weakpoint")
+                            {
+                                damageType = DamageType.Weakpoint;
+                            }
+                            hitbox.Hit(new DamageInfo()
+                            {
+                                amount = _damage,
+                                damageTeam = DamageTeam.Any,
+                                source = actor,
+                                damageType = damageType
+                            });
+                        }
                     }
                 }
-
             }
             else
             {
@@ -97,6 +109,7 @@ public class Actor_Shooting : ActorBehaviour
                 rotY += _input.smoothInputAim.y * _aimSpeed;
                 rotX = Mathf.Clamp(rotX, -45, 45);
                 rotY = Mathf.Clamp(rotY, -45, 45);
+
                 _fpscam.localRotation = Quaternion.Euler(-rotY, rotX, 0f);
             }
             else
@@ -128,6 +141,7 @@ public class Actor_Shooting : ActorBehaviour
                 Actor enemy = overlap.GetComponentInParent<Actor>();
                 enemy.GetBehaviour<Actor_Enemy>().MaterialSwap();
                 enemy.GetBehaviour<Actor_Enemy>().isShootable = true;
+                enemy.gameObject.layer = 10;
                 //do stuff with hitboxes maybe?
             }
             if (overlap.transform.gameObject.tag == "Weakpoint")

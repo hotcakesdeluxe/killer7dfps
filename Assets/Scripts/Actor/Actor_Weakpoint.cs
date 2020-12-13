@@ -5,6 +5,7 @@ using UnityEngine;
 public class Actor_Weakpoint : ActorBehaviour
 {
     [SerializeField] private GameObject _weakpointPrefab;
+    [SerializeField]private HitboxRoot _hitboxRoot;
     private GameObject _weakpoint;
     private Actor_EnemyAnimation _animation;
     private List<HumanBodyBones> _weakpointBones = new List<HumanBodyBones>();
@@ -34,6 +35,7 @@ public class Actor_Weakpoint : ActorBehaviour
         _weakpointTransform = _animation.animator.GetBoneTransform(_weakpointBones[Random.Range(0, _weakpointBones.Count -1)]);
         _weakpoint = Instantiate(_weakpointPrefab, _weakpointTransform.position, Quaternion.identity, _weakpointTransform);
         _weakpoint.GetComponent<ParticleSystem>().Stop();
+        _weakpoint.GetComponent<HitboxCollider>().Initialize(_hitboxRoot);
 
     }
     public override void UpdateBehaviour()
@@ -42,7 +44,7 @@ public class Actor_Weakpoint : ActorBehaviour
     }
     public void RevealWeakpoint()
     {
-         _weakpoint.GetComponent<ParticleSystem>().Play();
+        _weakpoint.GetComponent<ParticleSystem>().Play();
     }
 
 }

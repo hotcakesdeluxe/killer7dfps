@@ -21,5 +21,6 @@ namespace PHL.Texto
         public List<TextoLanguage> languages;
         public string googleAPIKey;
         public List<GoogleSheetInfo> googleSheetsInfos;
+        public TextoLanguage overrideLanguage;
     }
 }
