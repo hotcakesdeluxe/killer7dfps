@@ -10,6 +10,7 @@ public class Actor_PlayerInput : ActorBehaviour
     private Actor_Shooting _shooting;
     private Vector2 _rawInputMovement;
     private Vector2 _rawInputAim;
+    private int _characterInputDisabledFrames;
     [HideInInspector]
     public Vector2 smoothInputAim => _rawInputAim;
     [HideInInspector]
@@ -36,6 +37,22 @@ public class Actor_PlayerInput : ActorBehaviour
     {
         base.UpdateBehaviour();
         CalculateMovementInputSmoothing();
+    }
+    public override void LateUpdateBehaviour()
+    {
+        base.LateUpdateBehaviour();
+        if (_characterInputDisabledFrames > 0)
+        {
+            _characterInputDisabledFrames--;
+        }
+        if (_characterInputDisabledFrames > 0)
+        {
+            _playerInput.currentActionMap.Disable();
+        }
+        else
+        {
+            _playerInput.currentActionMap.Enable();
+        }
     }
     public void OnMovement(InputAction.CallbackContext value)
     {
@@ -111,6 +128,11 @@ public class Actor_PlayerInput : ActorBehaviour
     private void RemoveAllBindingOverrides()
     {
         InputActionRebindingExtensions.RemoveAllBindingOverrides(_playerInput.currentActionMap);
+    }
+    public void DisableCharacterInputForFrames(int frames)
+    {
+        _characterInputDisabledFrames = frames;
+        _playerInput.currentActionMap.Disable();
     }
 
 }
