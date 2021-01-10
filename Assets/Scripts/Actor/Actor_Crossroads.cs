@@ -70,7 +70,7 @@ public class Actor_Crossroads : ActorBehaviour
         Debug.Log("registered buttons");
         for(int i =0; i < _pathsButtonsHolder.Buttons.Count; i++)
         {
-            int x = i;//today i learned you need to copy a variable into a lamba expression otherwise the compile is mad 
+            int x = i;//today i learned you need to copy a variable into a lamba expression otherwise the compiler is mad 
             _pathsButtonsHolder.Buttons[x].onClick.AddListener(()=>OnPathButtonClick(_pathsButtonsHolder.Paths[x]));
         }
     }

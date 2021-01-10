@@ -77,10 +77,10 @@ public class ConAct_Speak : ConversationAction
             {
                 currentVisibleCharactersRatio += (Time.deltaTime / ((float)finalText.Length)) * _charactersPerSecond;
 
-                /*if (_input.inputActions.Menu.Confirm.triggered)//_input.inputSystem_Menu.confirm.onDown)
+                if (_input.isInteract)//_input.inputSystem_Menu.confirm.onDown)
                 {
                     currentVisibleCharactersRatio = 1;
-                }*/
+                }
 
                 speakingDuration -= Time.deltaTime;
                 yield return 0f;
@@ -93,10 +93,10 @@ public class ConAct_Speak : ConversationAction
             {
                 speakingDuration -= Time.deltaTime;
                 
-                /*if (_input.inputActions.Menu.Confirm.triggered)//_input.inputSystem_Menu.confirm.onDown)
+                if (_input.isInteract)//_input.inputSystem_Menu.confirm.onDown)
                 {
                     buttonPress = true;
-                }*/
+                }
 
                 yield return 0f;
             }

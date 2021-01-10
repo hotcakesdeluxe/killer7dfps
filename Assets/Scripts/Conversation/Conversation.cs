@@ -112,7 +112,7 @@ public class Conversation : MonoBehaviour
 
                     if (conversationType == ConversationType.MissionDialogue)
                     {
-                        Debug.Log("made it");
+                        //Debug.Log("made it");
                     }
                 }
                 currentConversationAction = currentConversationAction.GetNextAction();

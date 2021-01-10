@@ -21,6 +21,7 @@ public class Actor_PlayerInput : ActorBehaviour
     public bool isAiming = false;
     public bool isFiring = false;
     public bool isReloading = false;
+    public bool isInteract = false;
     private bool _canShoot = true;
     private string currentControlScheme;
     public override void AssignActorReferences(Actor newActor)
@@ -82,7 +83,6 @@ public class Actor_PlayerInput : ActorBehaviour
     }
     public void OnToggleAim(InputAction.CallbackContext value)
     {
-
         if (value.started)
         {
             isAiming = !isAiming;
@@ -100,6 +100,25 @@ public class Actor_PlayerInput : ActorBehaviour
         if (isAiming && value.started)
         {
             _shooting.Scan();
+        }
+        if(value.started)
+        {
+            isInteract = true;
+        }
+        if (value.canceled)
+        {
+            isInteract = false;
+        }
+    }
+    public void OnUISelect(InputAction.CallbackContext value)
+    {
+        if(value.started)
+        {
+            isInteract = true;
+        }
+        if (value.canceled)
+        {
+            isInteract = false;
         }
     }
     private void CalculateMovementInputSmoothing()
