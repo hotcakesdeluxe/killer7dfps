@@ -53,18 +53,15 @@ public class Actor_Interaction : ActorBehaviour
         }
         if (CanInteract())
         {
-            
             if (_input != null)
             {
-               if (_input.isInteract)//_input.inputSystem_Character.interact.onDown)
+               if (_input.isInteract && !_conversation.conversing)//_input.inputSystem_Character.interact.onDown)
                 {
-                    Debug.Log("button works");
                     StartInteraction(hoverInteractable);
                 }
             }
 
         }
-        Debug.Log(interacting);
     }
     public virtual bool CanInteract()
     {

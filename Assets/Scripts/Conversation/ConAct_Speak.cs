@@ -22,6 +22,7 @@ public class ConAct_Speak : ConversationAction
     private Actor_Conversation _speakingActor;
     private Actor_Conversation _speakingToActor;
     public bool nextButtonVisible { get; protected set; }
+    private bool _nextPressed;
     public SpeakEvent speakStartEvent { get; protected set; } = new SpeakEvent();
     public SecureEvent speakEndEvent { get; protected set; } = new SecureEvent();
 
@@ -47,6 +48,7 @@ public class ConAct_Speak : ConversationAction
     protected override IEnumerator ActionRoutine()
     {
         nextButtonVisible = false;
+        _nextPressed = false;
         string finalText = _text;
 
 
@@ -88,14 +90,13 @@ public class ConAct_Speak : ConversationAction
 
             currentVisibleCharactersRatio = 1;
 
-            bool buttonPress = false;
-            while (!buttonPress)
+            while (true)
             {
                 speakingDuration -= Time.deltaTime;
                 
                 if (_input.isInteract)//_input.inputSystem_Menu.confirm.onDown)
                 {
-                    buttonPress = true;
+                    break;
                 }
 
                 yield return 0f;

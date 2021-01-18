@@ -68,13 +68,8 @@ public class ConversationAction : MonoBehaviour
 
     protected virtual IEnumerator ActionRoutine()
     {
-        //So it stops complaining about being a coroutine
-        if (false)
-        {
-            yield return 0f;
-        }
-
         StopAction();
+        yield break;
     }
 
     public virtual ConversationAction GetNextAction()

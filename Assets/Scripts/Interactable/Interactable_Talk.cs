@@ -23,6 +23,7 @@ public class Interactable_Talk : Interactable
             {
                 return false;
             }
+            
         }
 
         return base.CanInteract(sourceActor);
