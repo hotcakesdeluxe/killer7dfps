@@ -5,7 +5,7 @@ using PHL.Common.Utility;
 using PHL.Texto;
 using TMPro;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class UI_Conversation : HUD_Element
 {
     [SerializeField] private GameObject _speakObject;
@@ -19,6 +19,7 @@ public class UI_Conversation : HUD_Element
     private Actor_Conversation _actorConversation;
     private Conversation _currentConversation;
     private bool _speakWindowActive;
+    private bool _isTextAnimating = false;
     private int _speakWindowActiveFrames;
 
     private TMP_FontAsset _baseFont_Name;
@@ -26,6 +27,7 @@ public class UI_Conversation : HUD_Element
     private Material _baseMaterial_Name;
     private Material _baseMaterial_Speak;
 
+    private DOTweenTMPAnimator _textAnimator;
 
     void Start()
     {
@@ -35,6 +37,10 @@ public class UI_Conversation : HUD_Element
         {
             choiceObject.SetActive(false);
         }
+    }
+    void OnEnable()
+    {
+        _textAnimator = new DOTweenTMPAnimator(_speakText);
     }
     protected override void Update()
     {
@@ -55,7 +61,7 @@ public class UI_Conversation : HUD_Element
                     {
                         _choiceObjects[i].SetActive(true);
                         _choiceTexts[i].text = choiceAction.choiceList[i];
-                        _choiceImages[i].color = i == choiceAction.currentChoiceIndex ? Color.yellow : Color.black;
+                        _choiceImages[i].color = i == choiceAction.currentChoiceIndex ? Color.yellow : Color.gray;
                     }
                 }
                 else if (_currentConversation.currentConversationAction is ConAct_Speak)
@@ -63,11 +69,16 @@ public class UI_Conversation : HUD_Element
                     ConAct_Speak speakAction = (ConAct_Speak)(_currentConversation.currentConversationAction);
 
                     _speakText.maxVisibleCharacters = Mathf.RoundToInt(ExtraMath.Map(speakAction.currentVisibleCharactersRatio, 0, 1, 0, _speakText.text.Length));
-
+                    Debug.Log(_textAnimator.textInfo.characterCount);
                     if (speakAction.nextButtonVisible)
                     {
                         _nextButton.SetActive(true);
                     }
+                }
+                if (_speakText.maxVisibleCharacters == _speakText.text.Length && !_isTextAnimating)
+                {
+                    Debug.Log("animate text");
+                    AnimateText();
                 }
             }
         }
@@ -81,6 +92,7 @@ public class UI_Conversation : HUD_Element
         if (_speakWindowActive)
         {
             _speakWindowActiveFrames = 2;
+
         }
         else
         {
@@ -130,6 +142,7 @@ public class UI_Conversation : HUD_Element
     }
     private void SpeakStartReceived(CharacterData characterData, string text, Conversation.ConversationType conversationType)
     {
+
         if (characterData != null)
         {
             _speakerObject.SetActive(true);
@@ -155,19 +168,32 @@ public class UI_Conversation : HUD_Element
         if (isMissionDialogue)
         {
             _speakText.text = text;
-            
             _speakText.maxVisibleCharacters = 0;
         }
 
-
+        _isTextAnimating = false;
         _speakWindowActiveFrames = 2;
         _speakObject.SetActive(isMissionDialogue);
         _speakWindowActive = true;
         _nextButton.SetActive(!isMissionDialogue);
+
     }
+
     private void SpeakEndReceived()
     {
+        _isTextAnimating = false;
         _speakWindowActive = false;
         _speakWindowActiveFrames = 5;
+    }
+
+    private void AnimateText()
+    {
+        _isTextAnimating = true;
+
+        for (int i = 0; i < _textAnimator.textInfo.characterCount; ++i)
+        {
+            _textAnimator.DOShakeCharOffset(i, 999f, 1, 3, 33, false);
+        }
+
     }
 }

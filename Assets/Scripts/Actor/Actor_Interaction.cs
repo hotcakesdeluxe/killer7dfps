@@ -57,6 +57,7 @@ public class Actor_Interaction : ActorBehaviour
             {
                if (_input.isInteract && !_conversation.conversing)//_input.inputSystem_Character.interact.onDown)
                 {
+                    _input.ToggleActionMap("gamemenu");
                     StartInteraction(hoverInteractable);
                 }
             }

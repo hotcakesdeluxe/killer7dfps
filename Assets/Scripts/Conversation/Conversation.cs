@@ -112,7 +112,7 @@ public class Conversation : MonoBehaviour
 
                     if (conversationType == ConversationType.MissionDialogue)
                     {
-                        Debug.Log("made it");
+
                     }
                 }
                 currentConversationAction = currentConversationAction.GetNextAction();
@@ -121,5 +121,9 @@ public class Conversation : MonoBehaviour
         }
 
         StopConversation();
+        foreach (Actor_Conversation actor in _actors)
+        {
+            actor.StopConversation();
+        }
     }
 }

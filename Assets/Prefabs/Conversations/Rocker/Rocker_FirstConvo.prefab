@@ -30,6 +30,9 @@ Transform:
   m_Children:
   - {fileID: 1940656314422319836}
   - {fileID: 1940656313851941234}
+  - {fileID: 7482964498719995226}
+  - {fileID: 3178395591325322162}
+  - {fileID: 4856677514990633709}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -89,12 +92,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745ce77b20d2f5a4e83b3bfad9dc7f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiPosition: {x: 17, y: -79}
+  _uiPosition: {x: -163, y: -42}
   _connections:
   - id: 
-    connectedConversation: {fileID: 0}
+    connectedConversation: {fileID: 2157710638236166272}
   _characterData: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
-  _characterSpeakingTo: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
+  _characterSpeakingTo: {fileID: 11400000, guid: 4920e0635f58bdf469fedbc329c50cc5, type: 2}
   _text: 
   _texto: {fileID: 11400000, guid: c611ce2c6a3889642a06f35a2d6b0e25, type: 2}
 --- !u!1 &1940656314422319837
@@ -145,6 +148,166 @@ MonoBehaviour:
   - id: 
     connectedConversation: {fileID: 1940656313851941237}
   _characterData: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
-  _characterSpeakingTo: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
+  _characterSpeakingTo: {fileID: 11400000, guid: 4920e0635f58bdf469fedbc329c50cc5, type: 2}
   _text: 
   _texto: {fileID: 11400000, guid: 9afb44bed46a53240922087b69409302, type: 2}
+--- !u!1 &4560025726834993388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3178395591325322162}
+  - component: {fileID: 3765184953857448463}
+  m_Layer: 0
+  m_Name: Choice_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3178395591325322162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560025726834993388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1940656313536280772}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3765184953857448463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560025726834993388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89468f21dfbc3ca429b9f4944d3e796c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiPosition: {x: -1, y: 163}
+  _connections:
+  - id: Sure, I guess
+    connectedConversation: {fileID: 3312984833044995681}
+  - id: Piss Off
+    connectedConversation: {fileID: 3312984833044995681}
+  - id: ...
+    connectedConversation: {fileID: 0}
+  _characterData: {fileID: 11400000, guid: 4920e0635f58bdf469fedbc329c50cc5, type: 2}
+  _characterSpeakingTo: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
+  _text: Need help?
+  _choiceList:
+  - Sure, I guess
+  - Piss Off
+  - ...
+--- !u!1 &6723227282321105130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7482964498719995226}
+  - component: {fileID: 2157710638236166272}
+  m_Layer: 0
+  m_Name: Speak_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7482964498719995226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6723227282321105130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1940656313536280772}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2157710638236166272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6723227282321105130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745ce77b20d2f5a4e83b3bfad9dc7f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiPosition: {x: -90, y: 61}
+  _connections:
+  - id: 
+    connectedConversation: {fileID: 3765184953857448463}
+  _characterData: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
+  _characterSpeakingTo: {fileID: 11400000, guid: 4920e0635f58bdf469fedbc329c50cc5, type: 2}
+  _text: 
+  _texto: {fileID: 11400000, guid: 304221d1f4769c24b9c333ecd91a52f2, type: 2}
+--- !u!1 &7701815714121245187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4856677514990633709}
+  - component: {fileID: 3312984833044995681}
+  m_Layer: 0
+  m_Name: Speak_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4856677514990633709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701815714121245187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1940656313536280772}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3312984833044995681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701815714121245187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 745ce77b20d2f5a4e83b3bfad9dc7f37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiPosition: {x: 304, y: 173}
+  _connections:
+  - id: 
+    connectedConversation: {fileID: 0}
+  _characterData: {fileID: 11400000, guid: ffb82876a36395d4b886b445b57161cb, type: 2}
+  _characterSpeakingTo: {fileID: 11400000, guid: 4920e0635f58bdf469fedbc329c50cc5, type: 2}
+  _text: 
+  _texto: {fileID: 11400000, guid: d8ce4f421cc63a147a584d955fcdda64, type: 2}

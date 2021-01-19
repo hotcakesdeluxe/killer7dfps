@@ -79,7 +79,7 @@ public class ConAct_Speak : ConversationAction
             {
                 currentVisibleCharactersRatio += (Time.deltaTime / ((float)finalText.Length)) * _charactersPerSecond;
 
-                if (_input.isInteract)//_input.inputSystem_Menu.confirm.onDown)
+                if (_input.menuSubmit.triggered)//_input.inputSystem_Menu.confirm.onDown)
                 {
                     currentVisibleCharactersRatio = 1;
                 }
@@ -94,7 +94,7 @@ public class ConAct_Speak : ConversationAction
             {
                 speakingDuration -= Time.deltaTime;
                 
-                if (_input.isInteract)//_input.inputSystem_Menu.confirm.onDown)
+                if (_input.menuSubmit.triggered)//_input.inputSystem_Menu.confirm.onDown)
                 {
                     break;
                 }

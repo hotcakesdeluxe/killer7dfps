@@ -319,6 +319,109 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "gamemenu",
+            "id": "1b8e3460-ffc4-4bd8-8fa6-22fcb2c7ca9f",
+            "actions": [
+                {
+                    "name": "submit",
+                    "type": "Button",
+                    "id": "43ca94e8-9dcf-4c30-af8f-7581bd7383fc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "cancel",
+                    "type": "Button",
+                    "id": "73fc9546-2e28-460f-82dd-7eba2132745f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "menuMove",
+                    "type": "Value",
+                    "id": "b9174f58-4df4-4133-b3c5-d37bb98a38e8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "menuUp",
+                    "type": "Button",
+                    "id": "03acb2fb-4dc1-40fa-9fb7-daa59091f238",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "menuDown",
+                    "type": "Button",
+                    "id": "3d7579a0-d298-412e-965d-9cfd5922d0d1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "65db6435-7c5c-4883-84d2-dd65ba2ed628",
+                    "path": "*/{Submit}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f3205a4-0d7b-4cdc-a9d6-42b9eaa4ffe5",
+                    "path": "*/{Cancel}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e249043-e752-412d-8074-89e377af9a49",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "menuMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "92f843de-f629-43cf-ad2f-88c0d1530f6c",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "menuUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6ca84350-6235-438e-8e8a-3db3bf5a48d1",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "menuDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

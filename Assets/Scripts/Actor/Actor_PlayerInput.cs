@@ -16,12 +16,17 @@ public class Actor_PlayerInput : ActorBehaviour
     [HideInInspector]
     public Vector2 smoothInputMovement;
     public float movementSmoothingSpeed = 1f;
+    public InputAction menuSubmit { get; private set; }
+    public InputAction menuMove { get; private set; }
+    public InputAction menuUp { get; private set; }
+    public InputAction menuDown { get; private set; }
     [SerializeField] private float _timeBetweenShots;
     [HideInInspector]
     public bool isAiming = false;
     public bool isFiring = false;
     public bool isReloading = false;
     public bool isInteract = false;
+
     private bool _canShoot = true;
     private string currentControlScheme;
     public override void AssignActorReferences(Actor newActor)
@@ -33,11 +38,16 @@ public class Actor_PlayerInput : ActorBehaviour
     public override void InitializeBehaviour(Actor newActor)
     {
         base.InitializeBehaviour(newActor);
+        menuSubmit = _playerInput.actions["submit"];
+        menuMove = _playerInput.actions["menuMove"];
+        menuUp = _playerInput.actions["menuUp"];
+        menuDown = _playerInput.actions["menuDown"];
     }
     public override void UpdateBehaviour()
     {
         base.UpdateBehaviour();
         CalculateMovementInputSmoothing();
+
     }
     public override void LateUpdateBehaviour()
     {
@@ -54,6 +64,10 @@ public class Actor_PlayerInput : ActorBehaviour
         {
             _playerInput.currentActionMap.Enable();
         }
+    }
+    public void ToggleActionMap(string actionmap)
+    {
+        _playerInput.SwitchCurrentActionMap(actionmap);
     }
     public void OnMovement(InputAction.CallbackContext value)
     {
@@ -101,7 +115,7 @@ public class Actor_PlayerInput : ActorBehaviour
         {
             _shooting.Scan();
         }
-        if(value.started)
+        if (value.started)
         {
             isInteract = true;
         }
@@ -110,17 +124,7 @@ public class Actor_PlayerInput : ActorBehaviour
             isInteract = false;
         }
     }
-    public void OnUISelect(InputAction.CallbackContext value)
-    {
-        if(value.started)
-        {
-            isInteract = true;
-        }
-        if (value.canceled)
-        {
-            isInteract = false;
-        }
-    }
+
     private void CalculateMovementInputSmoothing()
     {
         smoothInputMovement = Vector2.Lerp(smoothInputMovement, _rawInputMovement, Time.deltaTime * movementSmoothingSpeed);

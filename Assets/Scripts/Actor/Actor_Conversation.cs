@@ -78,7 +78,7 @@ public class Actor_Conversation : ActorBehaviour
         _currentConversation = conversation;
         startConversationEvent.Invoke(conversation);
         _currentConversation.conversationActionEvent.AddListener(ConversationActionReceived);
-
+        //
         //Actor_Conversation otherActor = conversation.actors.Find(x => x.characterData != characterData);
     }
     public virtual void StopConversation()
@@ -90,6 +90,7 @@ public class Actor_Conversation : ActorBehaviour
             if (_input != null)
             {
                 _input.DisableCharacterInputForFrames(2);
+                _input.ToggleActionMap("gameplay");
             }
         }
         _currentConversation = null;

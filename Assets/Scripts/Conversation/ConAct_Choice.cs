@@ -57,20 +57,20 @@ public class ConAct_Choice : ConversationAction
         while(true)
         {
             //set these up in playerinput
-            /*if(_input.inputActions.Menu.Confirm.triggered)
+            if(_input.menuSubmit.triggered)
             {
                 break;
             }
-
-            if(_input.inputActions.Menu.NavigateUp.triggered)
+            //this doesn't fucking work at all idiot
+            if(_input.menuUp.triggered)
             {
                 currentChoiceIndex--;
             }
             
-            if(_input.inputActions.Menu.NavigateDown.triggered)
+            if(_input.menuDown.triggered)
             {
                 currentChoiceIndex++;
-            }*/
+            }
 
             currentChoiceIndex = ExtraMath.Modulus(currentChoiceIndex, _choiceList.Count);
 
